@@ -1,0 +1,26 @@
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-6">
+      <div class="card shadow">
+        <div class="card-header bg-primary text-white text-center">
+          <h2>Ingresa el Préstamo</h2>
+        </div>
+        <div class="card-body">
+          <input
+            type="number" 
+            class="form-control mb-3" 
+            [(ngModel)]="montoPrestamo" 
+            placeholder="Monto del préstamo" 
+            (ngModelChange)="calcularPrestamo()">
+          
+          <div *ngIf="cuotas > 0">
+            <h4>Resultados</h4>
+            <p>Total con interés: {{ deudaTotal | currency:'USD' }}</p>
+            <p>Número de cuotas: {{ cuotas }}</p>
+            <p>Monto por cuota: {{ montoPorCuota | currency:'USD' }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

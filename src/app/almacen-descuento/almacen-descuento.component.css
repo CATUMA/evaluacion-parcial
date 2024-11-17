@@ -1,0 +1,20 @@
+.container {
+    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  button {
+    width: 100%;
+  }
+  
+  .mt-4 {
+    margin-top: 20px;
+  }
